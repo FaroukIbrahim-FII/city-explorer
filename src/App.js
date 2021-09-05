@@ -14,6 +14,8 @@ class App extends React.Component {
       location : '',
       lat:'',
       lon:'',
+      displayErr:false,
+      showtext: false,
     }
   }
 
@@ -22,14 +24,26 @@ class App extends React.Component {
     const locationName = event.target.location.value;
     console.log(locationName);
     const url = `https://eu1.locationiq.com/v1/search.php?key=${process.env.REACT_APP_KEY}&q=${locationName}&format=json`;
+    try 
+    {
     const respone = await axios.get(url);
     // console.log(respone);
     this.setState({
       location:respone.data[0].display_name,
       lon:respone.data[0].lon,
       lat:respone.data[0].lat,
+      showtext: true,
     })
     // console.log(this.state.lat);
+  }
+  catch 
+  {
+    console.log('err');
+    this.setState({
+      displayErr:true,
+      showtext: false,
+    })
+  }
   }
 
 
@@ -49,10 +63,12 @@ class App extends React.Component {
             Explore!
           </Button>
         </Form>
-        <h1>Welcome to {this.state.location}</h1>
+        {this.state.showtext && <h1>Welcome to {this.state.location}</h1>}
 
-        <p className='para'>Location Name: {this.state.location}, at latitude: {this.state.lat}, by longitude: {this.state.lon}</p>
-        <Image className='image' src={`https://maps.locationiq.com/v3/staticmap?key=${process.env.REACT_APP_KEY}&center=${this.state.lat},${this.state.lon}&zoom=1-18`} fluid />
+        {this.state.showtext && <p className='para'>Location Name: {this.state.location}, at latitude: {this.state.lat}, by longitude: {this.state.lon}</p>}
+        {this.state.showtext && <Image className='image' src={`https://maps.locationiq.com/v3/staticmap?key=${process.env.REACT_APP_KEY}&center=${this.state.lat},${this.state.lon}&zoom=1-18`} fluid />}
+
+        {this.state.displayErr && <p className='error'>Error: Status Code: 400, 404, 500</p>}
 
         
       <footer className='footer' >&copy; Farouk Ibrahim</footer>

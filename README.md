@@ -1,3 +1,41 @@
+# Project Name
+
+**Author**: Your Name Goes Here
+**Version**: 1.0.0 (increment the patch/fix version number if you make more commits past your first submission)
+
+## Overview
+
+City Explorer is a website that allows the user to input a location name and it will show the location as a map image as well as providing the user with its logitude and latitude. We are creating it to make it easier for the user to search for a specific location.
+
+## Getting Started
+
+If the user would like to make a similar webapp all they have to do is:
+   * Create a new repo on GitHub, initialized with no files.
+   * Add React app to your project.
+   * Once the React app is ready to go, start the coding process.
+   * Use LocationIQ API.
+
+## Architecture
+<!-- Provide a detailed description of the application design. What technologies (languages, libraries, etc) you're using, and any other relevant design information. -->
+
+## Change Log
+<!-- Use this area to document the iterative changes made to your application as each feature is successfully implemented. Use time stamps. Here's an example:
+
+01-01-2001 4:59pm - Application now has a fully-functional express server, with a GET route for the location resource. -->
+
+## Credit and Collaborations
+<!-- Give credit (and a link) to other people or resources that helped you build this application. -->
+
+Name of feature: ________________________________
+
+Estimate of time needed to complete: _____
+
+Start time: _____
+
+Finish time: _____
+
+Actual time needed to complete: _____
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

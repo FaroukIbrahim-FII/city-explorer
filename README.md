@@ -16,25 +16,26 @@ If the user would like to make a similar webapp all they have to do is:
    * Use LocationIQ API.
 
 ## Architecture
-<!-- Provide a detailed description of the application design. What technologies (languages, libraries, etc) you're using, and any other relevant design information. -->
+LocationIQ, Github, JavaScript, React.
 
 ## Change Log
-<!-- Use this area to document the iterative changes made to your application as each feature is successfully implemented. Use time stamps. Here's an example:
-
-01-01-2001 4:59pm - Application now has a fully-functional express server, with a GET route for the location resource. -->
-
+first commit at 13:30
+basic React at 14:30
+adding task 2 at 16:30
+adding task 3 at 17:40
+adding task 4 at 18:20
 ## Credit and Collaborations
-<!-- Give credit (and a link) to other people or resources that helped you build this application. -->
+Rihan Foudeh
 
-Name of feature: ________________________________
+Name of feature: Creating city explorer app
 
-Estimate of time needed to complete: _____
+Estimate of time needed to complete: 2 hrs
 
-Start time: _____
+Start time: 1:30 pm
 
-Finish time: _____
+Finish time: 6:20 pm
 
-Actual time needed to complete: _____
+Actual time needed to complete: 4:50 hrs
 
 # Getting Started with Create React App
 

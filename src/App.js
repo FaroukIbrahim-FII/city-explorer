@@ -4,6 +4,7 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import Image from 'react-bootstrap/Image';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './App.css';
 
 class App extends React.Component {
 
@@ -34,9 +35,11 @@ class App extends React.Component {
 
   render() {
     return (
-
       <>
-        <Form onSubmit={this.getInputData}>
+      
+      <body className='body'>
+      <header className='header' >City Explorer</header>
+        <Form className='form' onSubmit={this.getInputData}>
           <Form.Group className="mb-3" controlId="place">
             <Form.Label>Place Name</Form.Label>
             <Form.Control type="text" placeholder="Enter Place Name" name="location" />
@@ -46,13 +49,15 @@ class App extends React.Component {
             Explore!
           </Button>
         </Form>
-        <p>Location Name: {this.state.location}, at latitude: {this.state.lat}, by longitude: {this.state.lon}</p>
-        
+        <h1>Welcome to {this.state.location}</h1>
+
+        <p className='para'>Location Name: {this.state.location}, at latitude: {this.state.lat}, by longitude: {this.state.lon}</p>
+        <Image className='image' src={`https://maps.locationiq.com/v3/staticmap?key=${process.env.REACT_APP_KEY}&center=${this.state.lat},${this.state.lon}&zoom=1-18`} fluid />
 
         
-
-      </>
-
+      <footer className='footer' >&copy; Farouk Ibrahim</footer>
+      </body>
+</>
     )
 
   }

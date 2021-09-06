@@ -33,6 +33,7 @@ class App extends React.Component {
       lon:respone.data[0].lon,
       lat:respone.data[0].lat,
       showtext: true,
+      displayErr:false,
     })
     // console.log(this.state.lat);
   }

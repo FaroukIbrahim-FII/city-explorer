@@ -7,35 +7,40 @@
 
 City Explorer is a website that allows the user to input a location name and it will show the location as a map image as well as providing the user with its logitude and latitude. We are creating it to make it easier for the user to search for a specific location.
 
+Add specific weather status for 3 days for specific locations.
+
 ## Getting Started
 
 If the user would like to make a similar webapp all they have to do is:
-   * Create a new repo on GitHub, initialized with no files.
-   * Add React app to your project.
-   * Once the React app is ready to go, start the coding process.
-   * Use LocationIQ API.
+
+   * Create a new repo on GitHub, initialized with README and .ignore for the server repo.
+   * Install Cors, Express & dotenv, then start the coding process.
+   * Use Weather API.
+   * Manupilate you front end app to request data from the server.
 
 ## Architecture
-LocationIQ, Github, JavaScript, React.
+
+LocationIQ, weather API, Heroku, node.js, Github, JavaScript, React.
 
 ## Change Log
-first commit at 13:30
-basic React at 14:30
-adding task 2 at 16:30
-adding task 3 at 17:40
-adding task 4 at 18:20
+
+last submit: 8:46 pm
+
 ## Credit and Collaborations
+
 Rihan Foudeh
 
-Name of feature: Creating city explorer app
+## Features time estimate
 
-Estimate of time needed to complete: 2 hrs
+Name of feature: Creating city explorer server and connect it to the front-end app
 
-Start time: 1:30 pm
+Estimate of time needed to complete: 4 hrs
 
-Finish time: 6:20 pm
+Start time: 2:15 pm
 
-Actual time needed to complete: 4:50 hrs
+Finish time: 9:05 pm
+
+Actual time needed to complete: 6:50 hrs
 
 # Getting Started with Create React App
 

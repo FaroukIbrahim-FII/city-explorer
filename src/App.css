@@ -79,3 +79,16 @@
 .error{
   color: red;
 }
+
+.row > * {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+  /* padding-right: calc(var(--bs-gutter-x) * .5);
+  padding-left: calc(var(--bs-gutter-x) * .5); */
+  /* margin-top: 20px; */
+  margin-left: 3%;
+  margin-right: 2.5%;
+  gap: 20px;
+  margin-top: 30px;
+}

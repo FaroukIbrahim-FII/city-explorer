@@ -16,12 +16,13 @@ class App extends React.Component {
       lat:'',
       lon:'',
       cityName:'',
-      day:'',
-      day2:'',
-      day3:'',
-      description:'',
-      description2:'',
-      description3:'',
+      weatherData:[],
+      // day:'',
+      // day2:'',
+      // day3:'',
+      // description:'',
+      // description2:'',
+      // description3:'',
       displayErr:false,
       showtext: false,
       weatherErr:false,
@@ -68,25 +69,26 @@ class App extends React.Component {
     const WearherRes = await axios.get(url);
     if(!(WearherRes.data === '404 Not Found')){
     
-    const date1 = WearherRes.data[0].date;
-    const date2 = WearherRes.data[1].date;
-    const date3 = WearherRes.data[2].date;
-    const des1 = WearherRes.data[0].description;
-    const des2 = WearherRes.data[1].description;
-    const des3 = WearherRes.data[2].description;
+    // const date1 = WearherRes.data[0].date;
+    // const date2 = WearherRes.data[1].date;
+    // const date3 = WearherRes.data[2].date;
+    // const des1 = WearherRes.data[0].description;
+    // const des2 = WearherRes.data[1].description;
+    // const des3 = WearherRes.data[2].description;
 
 
 
     console.log(WearherRes);
 
     this.setState({
-      day:date1,
-      day2:date2,
-      day3:date3,
-      description:des1,
-      description2:des2,
-      description3:des3,
+      // day:date1,
+      // day2:date2,
+      // day3:date3,
+      // description:des1,
+      // description2:des2,
+      // description3:des3,
       weatherErr:false,
+      weatherData:WearherRes.data,
     })
   }else{
     this.setState({
@@ -122,12 +124,13 @@ class App extends React.Component {
         {this.state.displayErr && <p className='error'>Error: Status Code: 400, 404, 500</p>}
        
         <Weather 
-        day={this.state.day}
-        day2={this.state.day2}
-        day3={this.state.day3}
-        description={this.state.description}
-        description2={this.state.description2}
-        description3={this.state.description3}
+        weatherData={this.state.weatherData}
+        // day={this.state.day}
+        // day2={this.state.day2}
+        // day3={this.state.day3}
+        // description={this.state.description}
+        // description2={this.state.description2}
+        // description3={this.state.description3}
         weatherErr={this.state.weatherErr}
         
         

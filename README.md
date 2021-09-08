@@ -32,15 +32,15 @@ Rihan Foudeh
 
 ## Features time estimate
 
-Name of feature: Creating city explorer server and connect it to the front-end app
+Name of feature: to modulize some codes in the back-end and the front end
 
-Estimate of time needed to complete: 4 hrs
+Estimate of time needed to complete: 30 min
 
-Start time: 2:15 pm
+Start time: 11:20 am
 
-Finish time: 9:05 pm
+Finish time: 12:00 pm
 
-Actual time needed to complete: 6:50 hrs
+Actual time needed to complete: 40 hrs
 
 # Getting Started with Create React App
 

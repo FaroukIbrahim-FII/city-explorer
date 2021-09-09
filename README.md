@@ -32,15 +32,15 @@ Rihan Foudeh
 
 ## Features time estimate
 
-Name of feature: to modulize some codes in the back-end and the front end
+Name of feature: to use cache memory to boost the performance in the server side.
 
-Estimate of time needed to complete: 30 min
+Estimate of time needed to complete: 15 min
 
-Start time: 11:20 am
+Start time: 11:30 am
 
-Finish time: 12:00 pm
+Finish time: 11:35 am
 
-Actual time needed to complete: 40 hrs
+Actual time needed to complete: 5 min
 
 # Getting Started with Create React App
 
